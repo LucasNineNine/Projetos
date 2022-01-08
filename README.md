@@ -2,4 +2,4 @@
 
 Espero que possam me ajudar com dicas, tecnologias, boas prátias de programção e etc...
 
-Novas funcionalidades serão implementadas com o tempo.
+Novas funcionalidades serão implementadas em breve.
