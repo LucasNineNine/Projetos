@@ -167,6 +167,7 @@ section.sections{
 }
 img{
     width: 100%;
+    height: 100%;
     border-radius: 10px;
 }
 
@@ -306,29 +307,20 @@ section.section_main .second_column, .third_column{
 .section_sports .section_sports_big{
     justify-content: space-between;
 }
-.section_sports_big_item figure{
-    cursor: pointer;
-    transition: 0.3s;
+.section_sports_big_item img{
+    background-size: cover;
+    min-width: 300px;
+    transition: .5s;
 }
-.section_sports_big_item figure:hover{
-    transition: 0.3s;
-    filter: grayscale(35%);
+.section_sports_big_item img:hover{
+    transition: .5s;
+    filter: brightness(55%);
+    cursor: pointer;
 }
 .section_sports_big_item .sports_big_img_description{
-    transition: 1s;
-    position: relative;
-    top: -50.5%; 
     font-size: 1.17em;
     font-weight: bold;
-    color: var(--cor-whiteSmoke);
     border-radius: 10px;
-    padding-top: 150px;
-    max-width: 390px;
-    height: 200px;
-}.section_sports_big_item .sports_big_img_description:hover{
-    /*transition: 1s;*/
-    filter: grayscale(35%);
-    box-shadow: 0px -8px 12px 4px rgba(0, 0, 0, 0.5) inset;
 }
 
 /*
