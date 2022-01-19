@@ -167,7 +167,6 @@ section.sections{
 }
 img{
     width: 100%;
-    height: 100%;
     border-radius: 10px;
 }
 
@@ -309,6 +308,10 @@ section.section_main .second_column, .third_column{
 }
 .section_sports_big .section_sports_big_item{
     flex-direction: column;
+    width: calc((1250px - 40px) / 3);
+}
+.section_sports_big .section_sports_big_item:nth-child(2), .section_sports_big_item:nth-child(3){
+    margin-left: 20px;
 }
 .section_sports_big .section_sports_big_item figure{ 
     position: relative;
@@ -316,7 +319,7 @@ section.section_main .second_column, .third_column{
 }
 .section_sports_big .section_sports_big_item figure:hover{
     transition: .5s;
-    filter: brightness(80%);
+    filter: brightness(90%);
     cursor: pointer;
 }
 .section_sports_big .section_sports_big_item figure .shadow{
@@ -324,24 +327,31 @@ section.section_main .second_column, .third_column{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, transparent 30%, #000);
+    background: linear-gradient(180deg, transparent 30%, rgb(12, 11, 11));
 }
 .section_sports_big .section_sports_big_item figure img{
     min-width: 300px;
 }
-.section_sports_big .section_sports_big_item h4{
+.section_sports_big .section_sports_big_item figure h4{
     color: whitesmoke;
-    position: relative;
-    margin-top: -60px; /*40*/
-    padding-right: 10px;
-    padding-bottom: px; /*19*/
-    padding-left: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 10px;
+    padding-bottom: 35px;
 }
-
-/*
-.section_sports_big_item h3{
-    position: relative;
-    border-radius: 10px;
-    color: var(--cor-whiteSmoke);
+.section_sports_big .section_sports_big_item figure .play{
+    color: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 10px;
+    padding-bottom: 6px;
 }
-*/
+.section_sports_big .section_sports_big_item figure .play span:first-child {
+    color: black;
+    background: whitesmoke;
+    border-radius: 4px;
+    padding: 2px;
+    margin-right: 10px;
+}
