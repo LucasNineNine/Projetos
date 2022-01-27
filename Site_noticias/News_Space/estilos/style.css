@@ -293,15 +293,6 @@ section.section_main .second_column, .third_column{
     color: var(--cor-third_column);
 }
 
-/*  Not used, but in case you need
-.column_um .all_subtitle_container .all_subtitle{
-    margin-bottom: 10px;
-    color: #d10707; 
-    font-size: 20px;
-    font-weight: 500;
-}
-*/
-
 /*SECTION SPORTS---------------------*/
 
 /*SPORTS BIG ITEM--*/
@@ -309,11 +300,29 @@ section.section_main .second_column, .third_column{
     justify-content: space-between;
     margin-bottom: 40px;
 }
-.section_sports h1{
-    width: 150px;
+.section_sports .box_container_titulo_sports{
+    position: relative;
     margin-bottom: 20px;
-    border-bottom: 4px solid rgb(38, 204, 38);
-    border-radius: 3px;
+}
+.section_sports .container_titulo_sports::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #eee;
+    position: absolute;
+    top: 60%;
+}
+.section_sports .container_titulo_sports h1::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background: rgb(38, 204, 38);
+    margin-bottom: 20px;
+    z-index: 99;
+    position: relative;
 }
 .section_sports_big .section_sports_big_item{
     padding-bottom: 20px;
@@ -333,7 +342,7 @@ section.section_main .second_column, .third_column{
 }
 .section_sports_big .section_sports_big_item figure:hover{
     transition: .5s;
-    transform: scale(1.1, 1.1);
+    transform: scale(1.05, 1.05);
     /*filter: brightness(90%);   LEMBRE-SE DE VOLTAR NESSA MODIFICAÇAO*/
     cursor: pointer;
 }
@@ -417,15 +426,27 @@ section.section_main .second_column, .third_column{
 }
 
 /*ENTRETENIMENTO*/
-
-.section_entretenimento .linha{
+.section_entretenimento .box_container_titulo_entretenimento{
+    position: relative;
+    margin-bottom: 20px;
+}
+.section_entretenimento .container_titulo_entretenimento::after{
+    content: '';
+    display: block;
     width: 100%;
+    height: 2px;
+    background: #eee;
+    position: absolute;
+    top: 60%;
 }
 .section_entretenimento h1::after{
     content: '';
     display: block;
     background: red;
     width: 100%;
-    height: 3px;
+    height: 2px;
+    margin-bottom: 20px;
     border-radius: 2px;
+    z-index: 99;
+    position: relative;
 }
