@@ -327,7 +327,7 @@ section.section_main .second_column, .third_column{
 .section_sports_big .section_sports_big_item{
     padding-bottom: 20px;
     flex-direction: column;
-    width: calc((1250px - 40px) / 3);
+    
     border-bottom: 4px solid rgb(38, 204, 38);
     border-radius: 3px;
 }
@@ -380,12 +380,12 @@ section.section_main .second_column, .third_column{
     flex-wrap: wrap;
 }
 .section_sports_little .section_sports_little_item{
-    max-width: calc(1250px - 40px) / 3;
+    max-width: 390px;
     min-width: 140px;
 }
 .section_sports_little .section_sports_little_item:nth-child(2), .section_sports_little_item:nth-child(3), .section_sports_little_item:nth-child(5), .section_sports_little_item:nth-child(6){
     margin-bottom: 20px;
-    margin-left:  22px;
+    margin-left: 40px;
 }
 .section_sports_little_item figure{
     position: relative;
@@ -426,11 +426,11 @@ section.section_main .second_column, .third_column{
 }
 
 /*ENTRETENIMENTO*/
-.section_entretenimento .box_container_titulo_entretenimento{
+.section_entertainment .box_container_titulo_entertainment{
     position: relative;
     margin-bottom: 20px;
 }
-.section_entretenimento .container_titulo_entretenimento::after{
+.section_entertainment .container_titulo_entertainment::after{
     content: '';
     display: block;
     width: 100%;
@@ -439,9 +439,9 @@ section.section_main .second_column, .third_column{
     position: absolute;
     top: 60%;
 }
-.section_entretenimento h1::after{
+.section_entertainment h1::after{
     content: '';
-    display: block;
+    display: block; 
     background: red;
     width: 100%;
     height: 2px;
@@ -449,4 +449,36 @@ section.section_main .second_column, .third_column{
     border-radius: 2px;
     z-index: 99;
     position: relative;
+}
+
+/*ENTRETENIMENTO BIG*/
+.section_entertainment_big{
+    justify-content: space-between;
+}
+.section_entertainment .section_entertainment_big .section_entertainment_big_item{ 
+    font-weight: bold;
+    color: whitesmoke;
+    border-radius: 10px;
+    background-color: #fb3030;
+}
+.section_entertainment_big figure{
+    max-width: 390px;
+}
+.section_entertainment_big figure figcaption{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+/*ENTRETENIMENTO LITTLE*/
+.section_entertainment_little{
+    justify-content: space-between;
+}
+.section_entertainment .section_entertainment_little .section_entertaiment_little_item{
+    font-weight: bold;
+    color: whitesmoke;
+    border-radius: 10px;
+    background-color: #fb3030;
+}
+.section_entertainment_little figure{
+    max-width: 200px;
 }
